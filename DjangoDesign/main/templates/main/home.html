@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Righteous&family=Tektur&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .header {
+            top: 0;
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        .header .logo{
+            margin: 0;
+            font-size: 35px;
+            color: black;
+            font-weight: bold;
+            font-family: 'Spicy Rice', cursive;        
+        }
+        .navbar{
+            width: 590px;
+            height: 50px;
+            border-radius: 60px;
+            background-color: aliceblue;
+            padding: 9px;
+            align-items: center;
+        }
+        .navbar a{
+            margin-right: 3px;
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+            font-weight: 550;
+            font-family: 'Kanit', cursive;
+            margin-left: 35px;
+            transition: .3s;
+        }
+        .navbar a:hover,
+        .header a.active{
+            color:#4f8bf4;
+        }
+        .header a.active:hover{
+            color:black;
+        }
+        .sign {
+            color: black;
+            font-size: 25px;
+            font-family: 'Kanit', cursive;
+
+        }
+        .sign a{
+            text-decoration: none;
+            color: black;
+        }
+        .text{
+            width: 705px;
+            height: 267px;
+            font-family: 'Tektur', cursive;            
+            font-size: 100px;
+            color:black;
+            font-weight: 900;
+            margin-left: 140px;
+        }
+        .pharagraph{
+            width: 500px;
+            height:150;
+            margin-left: 145px;
+            font-family: 'Roboto Mono', cursive;            
+
+        }
+        button{
+            color:white;
+            padding: 10px 75px;
+            background-color: black;
+            border-radius: 25px;
+            transition: all 0.2s ease;
+            margin-left: 145px;
+            margin-top: 25px;
+        }
+        button:active{
+            transform: scale(0.96);
+        }
+        footer{
+            margin-top: 141.5px;
+            background-color: white;
+            width: 1481.5px;
+            height: 80px;
+        }
+        .navbar2{
+            font-size: 18px;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 230px;
+            background-color:rgb(249, 249, 249);
+            width: 1017px;
+            height: 153px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar2 div{
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto Mono', cursive;     
+        }
+    
+
+    </style>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<body style="background-image: url('{% static 'building.jpg' %}'); background-repeat: no-repeat; background-size:cover;">
+    <header class="header">
+        <div class="logo">
+            HOME
+        </div>
+        <div class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#">Properties</a>
+                <a href="#">Service</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+        </div>
+        <div class="sign">
+            <a href="#"><i class="fa-solid fa-user"></i> Sign up</a>
+        </div>
+    </header>
+    <div class="text">
+        FIND YOUR
+        DREAM
+    </div>
+    <div class="pharagraph">
+        our catalog will suprise you. Rather, discover</br>
+        an unprecedented offers of luxury properties.
+    </div>
+    <button>Catalog</button>
+    <div class="navbar2">
+        <div><i class="fa-solid fa-city" style="color: #41629a;"></i><p>all</p></div>
+        <div><i class="fa-solid fa-map-pin" style="color: #85c7cd;"></i><p>land lots</p></div>
+        <div><i class="fa-solid fa-city" style="color: #4b946c;"></i><p>office</p></div>
+        <div><i class="fa-solid fa-store" style="color: #adb865;"></i><p>store</p></div>
+        <div><i class="fa-solid fa-building" style="color: #c28879;"></i><p>apartment</p></div>
+        <div><i class="fa-regular fa-building" style="color: #884199;"></i><p>villa</p></div>
+        <div class="shap1"><i class="fa-solid fa-house" style="color:#6755a8;"></i> <p>house</p></div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
