@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Ysabeau+Infant:ital,wght@0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-padding-top: 2rem;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+}
+
+
+.ime3{
+   width: 67%;
+   margin-left: 49%;
+   margin-top: -37%;
+   margin-right: 90%;
+   margin-bottom: -14%;
+
+}
+
+.logo {
+   left: -12%;
+   width: 140px;
+   float: left;
+   position: relative;
+   top: -9%;
+   transform-origin: center;
+   animation: swing 2s infinite alternate;
+}
+
+@keyframes swing {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(5deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+nav {
+font-family: 'Wix Madefor Text', sans-serif;
+padding: 10px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+nav ul {
+background-color: white;
+padding: 10px;
+border-radius: 100px;
+margin-left: 10%;
+
+}
+nav ul li {
+display: inline-block;
+list-style: none;
+margin: 10px 15px;
+padding-left: 30px;
+padding-right: 30px;
+margin-bottom: -2px;
+}
+
+nav ul li a{
+text-decoration: none;
+color: black ;
+font-weight: 400;
+}
+
+.sign-up {
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 14px 40px;
+color: black;
+background-image: linear-gradient(45deg);
+font-size: 14px;
+margin-left :9px;
+}
+
+.sign-up .material-icons-outlined {
+margin-right: 5px;
+}
+
+.content{
+margin-top: 16%;
+max-width: 600px;
+font-size: 20px;
+
+}
+
+.content h1{
+
+font-family: 'Wix Madefor Text', sans-serif;
+font-size: 4em;
+
+}
+.content p{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 18px;
+}
+.btn {
+display: inline-block;
+padding: 16px 40px;
+background-color: black;
+color: white;
+text-decoration: none;
+border-radius: 1000px;
+width: 200px;
+text-align: center;
+}
+
+.btn button {
+border: none;
+background-color: transparent;
+color: white;
+font-size: 16px;
+}
+.btn:hover {
+background-color: lightblue;
+color: black;
+}
+
+.col :hover{
+color: rgb(95, 163, 236);
+}
+
+.camp-img {
+   width: 50%;
+   position: absolute;
+   bottom: -9px;
+   right: -4px;
+
+}
+
+.icons {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border: 2px;
+   border-radius: 1000px;
+   margin-top: 20%;
+   padding-left: 35px;
+   padding-right: 35px;
+   justify-content: space-between;
+   
+
+}
+
+.icons a {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-decoration: none;
+   color: black;
+   font-size: 12px;
+   padding: 10px;
+   margin: 5px;
+   border: -3px;
+}
+
+.icons a .material-symbols-outlined {
+   font-size: 30px;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white; 
+}
+
+.icons a span.text {
+   margin-top: 5px; 
+   font-family: Arial, sans-serif; 
+   font-weight: bold; 
+}
+
+.icons a.all span.material-symbols-outlined {
+   background-color: rgba(231, 122, 114, 0.7); 
+}
+
+.icons a.land-lost span.material-symbols-outlined {
+   background-color: rgba(235, 80, 131, 0.7); 
+}
+
+.icons a.office span.material-symbols-outlined {
+   background-color: rgba(200, 95, 219, 0.7); 
+}
+
+.icons a.stor span.material-symbols-outlined {
+   background-color: rgba(109, 177, 233, 0.7); 
+}
+
+.icons a.apartment span.material-symbols-outlined {
+   background-color: rgba(130, 218, 133, 0.7); 
+}
+
+.icons a.villa span.material-symbols-outlined {
+   background-color: rgba(212, 169, 104, 0.7); 
+}
+
+.icons a.house span.material-symbols-outlined {
+   background-color: rgba(57, 163, 145, 0.7); 
+}
+
+.icons a span.material-symbols-outlined::before {
+   content: attr(data-icon);
+}
+.icons a.all span.material-symbols-outlined {
+   color: #973d3d; 
+}
+
+.icons a.land-lost span.material-symbols-outlined {
+   color: #924b72; 
+}
+
+.icons a.office span.material-symbols-outlined {
+   color: #741b77; 
+}
+
+.icons a.stor span.material-symbols-outlined {
+   color: #223d68; 
+}
+
+.icons a.apartment span.material-symbols-outlined {
+   color: #18451b; 
+}
+
+.icons a.villa span.material-symbols-outlined {
+   color: #705417; 
+}
+
+.icons a.house span.material-symbols-outlined {
+   color: #22604e; 
+}
+
+.icons a span.material-symbols-outlined {
+   transition: transform 0.2s; 
+}
+
+.icons a span.material-symbols-outlined:hover {
+   transform: scale(2.0); 
+}
+
+.sign-up {
+   display: inline-block;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 20px;
+   transition: transform 0.2s, background-color 0.2s;
+ }
+ 
+ .sign-up:hover {
+   transform: scale(1.1);
+   background-color: rgb(151, 145, 195);
+ }
+ 
+ .sign-up span {
+   vertical-align: middle;
+ }
+ 
+ .sign-up span.material-icons-outlined {
+   font-size: 20px;
+   color: rgb(24, 9, 9);
+   margin-right: 5px;
+ }
