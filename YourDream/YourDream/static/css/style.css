@@ -12,11 +12,22 @@ list-style: none;
 scroll-behavior: smooth;
 }
 
+.hero::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 68px;
+   background-color: white;
+
+ }
+
 
 .ime3{
    width: 67%;
    margin-left: 49%;
-   margin-top: -37%;
+   margin-top: -43%;
    margin-right: 90%;
    margin-bottom: -14%;
 
@@ -54,11 +65,11 @@ justify-content: space-between;
 
 }
 nav ul {
-background-color: white;
+background-color: rgb(232, 237, 238);
 padding: 10px;
 border-radius: 100px;
 margin-left: 10%;
-
+box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
 }
 nav ul li {
 display: inline-block;
@@ -133,13 +144,7 @@ color: black;
 color: rgb(95, 163, 236);
 }
 
-.camp-img {
-   width: 50%;
-   position: absolute;
-   bottom: -9px;
-   right: -4px;
 
-}
 
 .icons {
    position: absolute;
@@ -149,13 +154,16 @@ color: rgb(95, 163, 236);
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: white;
+   background-color: rgb(232, 237, 238);
    border: 2px;
    border-radius: 1000px;
-   margin-top: 20%;
+   margin-top: 18.7%;
    padding-left: 35px;
    padding-right: 35px;
    justify-content: space-between;
+   z-index: 1;
+   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1); 
+
    
 
 }
@@ -184,7 +192,7 @@ color: rgb(95, 163, 236);
 }
 
 .icons a span.text {
-   margin-top: 5px; 
+   margin-top: 8px; 
    font-family: Arial, sans-serif; 
    font-weight: bold; 
 }
@@ -253,7 +261,7 @@ color: rgb(95, 163, 236);
 }
 
 .icons a span.material-symbols-outlined:hover {
-   transform: scale(2.0); 
+   transform: scale(1.4); 
 }
 
 .sign-up {
@@ -262,6 +270,8 @@ color: rgb(95, 163, 236);
    padding: 10px;
    border-radius: 20px;
    transition: transform 0.2s, background-color 0.2s;
+   
+   
  }
  
  .sign-up:hover {
