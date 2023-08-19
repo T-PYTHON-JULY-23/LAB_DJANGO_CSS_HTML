@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url('modern-housing-with-blue-sky.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .menu{
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            width: 600px;
+            height: 50px;
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+
+        }
+        .nav{
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+
+            
+            
+        }
+        .nav:hover{
+        color: blue;
+
+        }
+
+
+        .logoi{
+            width: 150px;
+            height: 100px;
+
+        }
+        .logo_signup{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px;
+        font-size: 20px;
+        align-items: center;
+        text-decoration: none;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+}
+    .header >div{
+    border-radius: 55px;
+    padding: 2px;
+    }
+    button{
+        border: none;
+        background-color:black;
+        border-radius: 55px;
+        color:white;
+        padding: 15px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+
+    }
+    button:hover{
+        color: black;
+        background-color:lightblue;
+    }
+    
+    .content{
+        margin-left: 50px;
+  
+
+    }
+    .content > h1{
+        font-family: 'Barriecito', cursive;
+        font-size: 80px;
+
+    }
+    .content > p{
+        font-size: 30px;
+        width: 400px;
+
+    }
+    .options{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        border-radius: 55px;
+        padding: 20px;
+        width: 1200px;
+        margin: auto;
+        margin-top: 40px;
+
+     
+        }
+        .options > .icon-container{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            align-items: center;
+        }
+        .options > a{
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+        .options .material-symbols-outlined{
+            background-color: bisque;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+
+            border-radius: 50%;
+        }
+        #apartment{
+            background-color: rgb(186, 202, 227);
+            color: rgb(56, 93, 148);
+
+        }
+        #pin_drop{
+            background-color: rgb(153, 187, 188);
+            color: rgb(43, 127, 86);
+
+        }
+        #location_city{
+            background-color: rgb(193, 227, 186);
+            color: rgb(78, 184, 87);
+
+        }
+        #storefront{
+            background-color: rgb(173, 196, 155);
+            color: rgb(106, 139, 29);
+
+        }
+        #domain{
+            background-color: rgb(222, 177, 139);
+            color: rgb(169, 101, 33);
+
+        }
+        #villa{
+            background-color: rgb(190, 137, 199);
+            color: rgb(124, 25, 190);
+
+        }
+        #gite{
+            background-color: rgb(213, 205, 225);
+            color: rgb(71, 45, 188);
+
+        }
+        .apartment{
+            color: rgb(56, 93, 148);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="Home"><img class="logoi" src="Screenshot_2023-08-18_204638-removebg-preview.png" alt=""></div>
+
+        <div class="menu">
+            <a class="nav" href="h">Home</a>
+            <a class="nav"href="p">properties</a>
+            <a class="nav" href="s">service</a>
+            <a class="nav" href="c">Contact</a>
+            <a class="nav" href="a">About</a>
+        </div>
+        <div class="sign_up">
+            <div class="logo_signup">
+                <a href="" class="material-symbols-outlined sign_up">Person</a>
+                <a href="" class="sign_up"> Sign up </a> 
+        </div>
+     </header>
+     <div class="content">
+        <h1>FIND YOUR <br>DREAM</h1>
+        <p>Our catalog will surprise you.Rather, discover an unprecedented offers of luxury properties.</p>
+        <button>catalog</button>
+     </div>
+     <div class="options">
+        <div class="icon-container"><span id="apartment" class="material-symbols-outlined">apartment</span><a class="apartment" href="#">all</a></div>
+        <div class="icon-container"><span id="pin_drop" class="material-symbols-outlined">pin_drop</span><a href="#">land lots</a></div>
+        <div class="icon-container"><span id="location_city" class="material-symbols-outlined">location_city</span><a href="#">office</a></div>
+        <div class="icon-container"><span id="storefront" class="material-symbols-outlined">storefront</span><a href="#">store</a></div>
+        <div class="icon-container"><span id="domain" class="material-symbols-outlined">domain</span><a href="#">apartment</a></div>
+        <div class="icon-container"><span id="villa" class="material-symbols-outlined">villa</span><a href="#">villa</a></div>
+        <div class="icon-container"><span id="gite" class="material-symbols-outlined">gite</span><a href="#">house</a></div>
+</div>
+     </div>
+
+</body>
+</html>
