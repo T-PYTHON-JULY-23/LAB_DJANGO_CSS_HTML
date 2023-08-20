@@ -1,0 +1,13 @@
+body {
+    background-image:url(https://cdn.dribbble.com/userupload/4295797/file/original-d2f37b5cd0765168cdee5623b683ea4e.png?resize=752x);
+	background-attachment:fixed;
+    background-repeat: no-repeat;
+  background-size:cover ;
+  
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 100px;
+}
