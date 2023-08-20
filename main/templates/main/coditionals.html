@@ -1,0 +1,16 @@
+<h1>This is conditionals</h1>
+
+{% if is_dilvered %}
+
+<h2> Package is Delivered !!</h2>
+
+{% else %}
+
+ Package is pending delivery ....
+
+{% endif %}
+
+<h3>Products : </h3>
+{% for product in products %}
+    {{ product }}
+{% endfor %}
