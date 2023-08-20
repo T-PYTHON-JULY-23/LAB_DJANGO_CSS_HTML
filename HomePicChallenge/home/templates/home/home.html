@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Rowdies&family=Rubik&display=swap" rel="stylesheet">
+   <style>
+            
+            @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+        src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+            url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+            url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        .material-icons-outlined {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 34px;  /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+    
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+        }
+
+        .home{
+        width: 100%;
+        height: 50px;
+        font-family: 'Rubik', sans-serif;
+        display: flex;
+        flex-flow: column wrap;
+        font-weight: bold;
+
+
+        }
+        .homeBar{
+        color: antiquewhite ;
+        background-color: rgb(255, 255, 255);
+        width: 45%;
+        height: 70px;
+        flex-flow: column wrap;
+        position:absolute;
+        top: 3%;
+        left: 30%;
+        display: flex;
+        flex-direction: row ;
+        justify-content: center;
+        column-gap: 5px;  
+        border-radius: 50px;
+        transform: translate(-15%, 20%);
+        text-align: center;
+        }
+        .homeBar a:link {
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+            height: 50px;
+            width: 60px;
+            padding: 4.5%;          
+        }
+        #homeicon{
+            mix-blend-mode:multiply;
+            background-size: 10%;    
+            border-radius: 50px;
+            width: 150px;
+            height: 150px;
+        }
+        .signup{
+        display: flex;
+        text-decoration: none;
+        flex-direction: row ;
+        column-gap: 5px; 
+        row-gap: 5px;
+        justify-content: right;
+        width: 150px;
+        height: 70px;
+        position:absolute;
+        top: 3%;
+        right: 3%;
+        transform: translate(-10%, 60%);
+
+        }
+        body{
+        background: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .homecontent{
+        font-family: 'Rubik', sans-serif;
+        display: flex;
+        flex-direction: column ;
+        row-gap: 6px;
+
+        position:absolute;
+        top: 25%;
+        left: 5%;
+        padding-bottom: 100px;
+        }
+        #catalog{
+        font-family: 'Rubik', sans-serif;
+        background-color: black;
+        color: aliceblue;
+        border-radius: 50px;
+        border: none;
+        width: 200px;
+        height: 50px;
+        position:absolute;
+        left: .6%;
+        font-size: 20px;
+
+        }
+        #heading{
+            font-family: 'Rowdies', cursive;
+            font-size: 90px;   
+        }
+        #all{
+            text-align: center;
+            color: #4770e2;
+            background:#4770e22f; 
+            background-size: contain;
+            border-radius: 50px;
+            width: 70%;
+            height: 90%;
+            
+        }
+        #land{
+            text-align: center;
+            color: rgb(22, 185, 226);
+            background: rgba(22, 185, 226, 0.171); 
+            border-radius: 50px;
+            width: 70%;
+            height: 80%;
+        }
+        #office{
+            text-align: center;
+            color: rgb(83, 161, 125);
+            background: rgba(83, 161, 125, 0.24); 
+            border-radius: 50px;
+            width: 70%;
+            height: 80%;
+        }
+        #store{
+            text-align: center;
+            color: rgb(120, 160, 12);
+            background: rgba(120, 160, 12, 0.247); 
+            border-radius: 50px;
+            width: 70%;
+            height: 80%;
+        }
+        #apartment{
+            text-align: center;
+            color: rgb(233, 129, 103);
+            background: rgba(233, 129, 103, 0.288);
+            border-radius: 50px;
+            width: 45px;
+            height: 35px;
+            
+        }
+        #villa{
+            text-align: center;
+            color: rgb(129, 41, 141);
+            background: rgba(129, 41, 141, 0.089); 
+            border-radius: 50px;
+            width: 35px;
+            height: 40px;
+
+
+        }
+        #house{
+            text-align: center;
+            color: rgb(77, 10, 139);
+            background: rgba(77, 10, 139, 0.089); 
+            border-radius: 50px;
+            width: 40px;
+            height: 30px;
+
+
+        }
+        .bottom-bar{
+            background-color:rgb(255, 255, 255);
+            border-radius: 50px;
+            width: 80%;
+            height: 90px;
+            position:absolute;
+            bottom: 0%;
+            right:7%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            row-gap: 1px; 
+            padding: 1%;   
+            flex-flow: column wrap;
+            font-family: 'Kanit', sans-serif;
+            font-weight: bold;
+            transform: translate(-1%, 60%);
+        }
+        .bottom-bar a:link {
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+            height: 50px;
+            width: 60px;
+            padding: 4.5%;  
+        
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: #4770e2;
+        }         
+    </style>
+
+    <title> HOME</title>
+</head>
+
+<body>
+<div class="home">   
+     <div>
+        <a  href="http://127.0.0.1:8000/";> 
+        <img id="homeicon" src="https://i.pinimg.com/750x/8a/27/6f/8a276ff512e1480bf5c8607ca08b7983.jpg">
+        </a>
+    </div>
+
+    <div class="homeBar">
+
+<a href="http://127.0.0.1:8000/";> Home</a>
+<a href="http://127.0.0.1:8000/under_work/"> Properties</a>
+<a href="http://127.0.0.1:8000/under_work/"> Service</a>
+<a href="http://127.0.0.1:8000/under_work/"> About</a>
+<a href="mailto:someone@example.com"> Contacts</a>
+</div>
+
+<div >
+    <a  class="signup" href="http://127.0.0.1:8000/under_work/" ><span class="material-icons-outlined">person_4</span> Sign up </a>
+</div>
+</div>
+
+
+<div class="homecontent">
+    <div id="heading">
+        FIND YOUR <br>DREAM
+    </div>
+    <div class="content">
+        Our catalog will suprise you. Rather, discover<br>
+        an unprecedented offers of luxury properties.
+        </div>
+
+        <a href="http://127.0.0.1:8000/under_work/"><button id="catalog" > catalog </button></a>
+</div>
+<div class="bottom-bar">
+
+<a  href="http://127.0.0.1:8000/under_work/"><span   id="all" class="material-icons-outlined all">
+    maps_home_work
+    </span><br>all </a>
+
+    <a  href="http://127.0.0.1:8000/under_work/"><span id="land" class="material-icons-outlined">
+        pin_drop
+        </span><br>land lots </a>
+    <a  href="http://127.0.0.1:8000/under_work/"><span id="office" class="material-icons-outlined">
+        business
+    </span><br>office </a>
+    <a  href="http://127.0.0.1:8000/under_work/"><span id="store" class="material-icons-outlined">
+        store
+        </span><br>store</a>
+        <a  href="http://127.0.0.1:8000/under_work/"><span id="apartment" class="material-icons-outlined">
+            domain
+            </span><br>apartment</a>
+    <a  href="http://127.0.0.1:8000/under_work/"><span  id="villa" class="material-icons-outlined">
+    villa</span><br>villa</a>
+    <a href="http://127.0.0.1:8000/under_work/">
+    <span  id="house" class="material-icons-outlined">house</span>house </a>
+</div>
+</body>
+</html>
