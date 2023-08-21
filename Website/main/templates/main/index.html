@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my website </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+   <style>
+     
+    
+         
+     * {
+        padding: 0px;
+       margin: 0px;
+       font-family: 'Roboto', sans-serif;
+    }
+
+      .wrapper {
+       display: flex;
+       flex-direction: column;
+       background-image: url("https://img.freepik.com/free-vector/designers-are-working-desing-web-page-web-design-user-interface-user-experience-content-organization_335657-4403.jpg?w=1380&t=st=1692453147~exp=1692453747~hmac=45dbcbb9e4ec7e8ae1ee72ba7d49787d95857effe08ab824d4af1e44c2c09859");
+       background-size: cover;
+       min-height: 100vh;
+       padding: 0px 80px;
+      }
+
+    
+      
+     .upper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+     }
+
+      
+    .logo {
+      display: flex;
+      color: blue;
+      flex-direction: row;
+      
+    
+    }
+    .icon{ 
+       display: flex;
+       align-items: center;
+       width: 100px;
+       height: 100px;   
+       color: blue;
+     }
+      .icon:hover{
+       
+        color: black;
+      }
+
+    .top-bar {
+       display: flex;
+       background-color: blue;
+       border-radius: 50px;
+  
+    }
+
+   
+
+    .top-bar a {
+       float: inline-start;
+       color: white;
+       padding: 15px 40px;
+       text-decoration: none; 
+      
+    }
+
+    .top-bar a:hover {
+       background-color: #ddd;
+       border-radius: 50px;
+       color: black;
+     } 
+
+
+    .middle {
+       display: flex;
+       flex-direction: column;
+       align-items:start;
+       row-gap: 30px;
+       width: 50%;
+       padding-top: 60px;
+      
+     }
+
+    .middle h1 {
+        font-size: 7rem;
+        font-family: 'Tilt Prism', cursive;
+    }
+
+    .butt{
+       background-color: black;
+       color: white;
+       padding: 10px 60px;
+       border-radius: 40px;
+       border: none;
+     }
+
+     .butt:hover {
+       background-color: blue; 
+     }
+
+
+     .lower{
+       display: flex;
+       position: fixed;
+       flex-direction: row;
+       column-gap: 80px;
+       background-color:blue;
+       border-radius: 60px;
+       padding: 40px 80px;
+       align-self: center;
+       bottom: 20px;
+
+     }
+
+     .service-item {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       row-gap: 5px;
+       color: white;
+     }
+
+     .service-item span {  
+        padding: 15px;
+        border-radius: 90px;
+     }
+
+     .service-item .store{
+       background-color: rgb(33, 158, 186);
+        color: aqua;
+     }
+     .service-item .Festival{
+      background-color: rgb(223, 155, 107);
+        color: rgb(222, 83, 3);
+     }
+
+     .service-item .Museum{
+       background-color: rgb(209, 159, 222);
+        color: rgb(131, 11, 182);
+     }
+     .service-item .Storefront{
+       background-color: rgb(239, 120, 116);
+        color: rgb(214, 18, 4);
+     }
+     .service-item .apartment{
+       background-color: rgb(133, 229, 150);
+        color: rgb(2, 54, 21);
+     }
+     .service-item .villa{
+       background-color: rgb(236, 240, 198);
+        color: rgba(143, 136, 43, 0.884);
+     }
+     .service-item .house{
+       background-color: rgb(226, 147, 164);
+        color: rgb(193, 5, 105);
+     }
+
+
+
+    </style>  
+
+</head>
+
+
+
+
+<body>
+ <div class="wrapper">
+  <div class="upper">
+
+        <div class="logo">
+         <h5>H</h5>
+         <i class="material-symbols-outlined">home</i>
+         <h5>ME</h5>
+      
+      </div>
+
+    <div class="top-bar">
+        <a href="#home">Home</a>
+        <a href="#Properties">Properties</a>
+        <a href="#Service">Service</a>
+        <a href="#about">About</a>
+        <a href="#Contacts">Contacts</a>
+     </div>
+
+     <div class="icon">
+        <i class="material-symbols-outlined">Person</i> sign up
+     </div>
+ </div>
+   
+ 
+
+
+  <div class="middle">
+         <h1> FIND YOUR DREAM</h1>
+         <p> Our catalog will surprise you . Rather, discover<br> an unprecdented offers of luxury properties.</p>
+         <input class="butt" type="button"value="catalog">
+ </div>
+
+
+
+  <div class="lower">
+
+     <div class="service-item">
+        <span class="material-symbols-outlined store">Store</span>
+        <h4>all</h4>
+     </div>
+
+      <div class="service-item">
+        <span class="material-symbols-outlined Festival">Festival</span>
+        <h4>land lost </h4>
+     </div>
+
+     <div class="service-item">
+        <span class="material-symbols-outlined Museum">Museum</span>
+        <h4>Offices</h4>
+     </div>
+
+     <div class="service-item">
+       <span class="material-symbols-outlined Storefront">Storefront</span>
+       <h4>store</h4>
+     </div>
+
+     <div class="service-item">
+       <span class="material-symbols-outlined apartment">apartment</span>
+       <h4>Apartment</h4>
+    </div>
+
+     <div class="service-item">
+       <span class="material-symbols-outlined villa">villa</span>
+       <h4>villa</h4>
+     </div>
+
+    <div class="service-item">
+       <span class="material-symbols-outlined house">house</span>
+       <h4>house</h4>   
+     </div>
+  </div>
+ </div>
+
+</body>
+
+
+
+
+</html>
