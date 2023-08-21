@@ -23,37 +23,60 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     
-    <style> 
+    <style>
+    
+    * {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h5, h6 {
+    font-family: 'Phudu', cursive;
+    }
 
     body{
         background-image: url("https://newsouthhomes.com.au/wp-content/uploads/2023/03/Avalon-22-Pavillion.jpg");
         background-size: 100% 100%;
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        
+        background-repeat: no-repeat;    
+    }
+
+    .nav-bar-container{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 35px;
     }
     
     .nav{
         display: flex;
         background-color: white;
-        justify-content:space-around;
         border-radius: 30px;
         opacity: 0.7;
-        padding: 4px;
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
+        column-gap: 40px;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px 20px;
     }
 
+    
     .logo{
+        display: flex;
+        position: fixed;
         width: 90px;
         height: 90px;
-        position: fixed;
         border-radius: 40px;
         top: 10px;
         left: 20px;
         
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
     }
 
     .material-symbols-outlined {
@@ -63,138 +86,115 @@
         'GRAD' 0,
         'opsz' 48 
     }
+
     .singup{
         display: flex;
         position: fixed;
+        align-items: center;
         top: 23px;
         right: 80px;
         font-family: 'Open Sans', sans-serif;
     }
 
-    .singup_icon {
-        margin-left: 1110px;
-        margin-top: -50px;
-    }
 
-    .text1{
+    .text{
         display: flex;
-        position: fixed;
-        bottom: 220px;
-        left: 220px;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 60px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 10px;
+        width: 50%;
         color: white;
-
+        padding-top: 130px;
+        padding-left: 80px;
     }
-    .text1 .text2{
-        display: flex;
-        position: fixed;
-        bottom: 220px;
-        font-size: 20px;
-        font-family: 'Noto Sans Chorasmian', sans-serif;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Ubuntu', sans-serif;
 
+
+    .text h1{
+        font-size: 4rem;
     }
+
 
     .btn{
-        display: flex;
-        position: fixed;
-        bottom: 150px;
-        left: 350px;
         background-color: rgb(241, 214, 163);
+        border-radius: 30px;
         color: white;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
+
+
+
+
+
+    .icons-container {
+        position: fixed;
+        bottom: 30px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
 
     .icons{
         display: flex;
         background-color: white;
-        position: relative;
         justify-content:space-evenly;
-        border-radius: 35px;
-        top: 430px;
-        margin-left: 200px;
-        margin-right: 200px;
+        border-radius: 55px;
+        width: 60vw;
         opacity: 0.7;
-        font-family: 'Open Sans', sans-serif;
-        padding-top: 20px;
+        padding: 10px  0px;
     }
 
-    .all{
+
+
+    .icon {
         display: flex;
-        position: fixed;
+        flex-direction: column;
+        row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .icon span {
+        display: flex;
+        justify-content: center;
         background-color: rgb(249, 220, 152);
-        border-radius: 10px;
-        left: 280px;
-        margin-top: -3px;
-
-    }
-    
-    .landlots{
-        display: flex;
-        position: fixed;
-        background-color: rgb(153, 244, 153);
-        border-radius: 10px;
-        left: 388px;
-        margin-top: -3px;
-
+        padding: 10px;
+        border-radius: 50%;
     }
 
-    .office{
-        display: flex;
-        position: fixed;
-        background-color: rgb(153, 244, 153);
-        border-radius: 10px;
-        left: 510px;
-        margin-top: -3px;
 
+    .icon .officeicon {
+        background-color: rgb(153, 244, 153)
     }
 
-    .store{
-        display: flex;
-        position: fixed;
-        background-color: rgb(153, 244, 153);
-        border-radius: 10px;
-        right: 642px;
-        margin-top: -3px;
+    .icon .landlotsicon{ 
+        background-color: rgb(153, 244, 153)
+    }
+
+    .icon .storeicon{
+        background-color: rgb(153, 244, 153)
+    }
+
+    .icon .apartmenticon{
+        background-color: rgb(153, 244, 153)
+    }
+
+    .icon .villaicon{
+        background-color: rgb(153, 244, 153)
+    }
+
+    .icon .houseicon{
+        background-color: rgb(153, 244, 153)
     }
 
     
 
-    .apartment{
-        display: flex;
-        position: fixed;
-        background-color: rgb(153, 244, 153);
-        border-radius: 10px;
-        right: 520px;
-        margin-top: -3px;
-    
-
-    }
-
-    .villa{
-        display: flex;
-        position: fixed;
-        background-color: rgb(153, 244, 153);
-        border-radius: 10px;
-        right: 399px;
-        margin-top: -3px;
-
-    }
-
-    .house{
-        display: flex;
-        position: fixed;
-        background-color: rgb(153, 244, 153);
-        border-radius: 10px;
-        right: 291px;
-        margin-top: -3px;
-    }
 
 
 
@@ -205,92 +205,94 @@
 
 <body>
 
-    <div class="nav"> 
-        <h4> <span style="color:rgb(246, 200, 92)"> Home </h4> </span>
-        <h4> Properties </h4>
-        <h4> Service </h4>
-        <h4> About </h4>
-        <h4> Contacts </h4>
-    </div>
+    <div class="nav-bar-container"> 
 
+        <div class="nav-bar"> 
 
-    <div>   
-        <img class="logo" src="https://marketplace.canva.com/EAE-ZqIdApg/1/0/1600w/canva-gold-and-white-minimalist-real-estate%2C-home%2C-luxury-logo-design-aFrabXhZYhM.jpg"/>
-    </div>
+            <div>
+                <img class="logo" src="https://marketplace.canva.com/EAE-ZqIdApg/1/0/1600w/canva-gold-and-white-minimalist-real-estate%2C-home%2C-luxury-logo-design-aFrabXhZYhM.jpg"/>
+            </div>
 
 
 
-    <div class="singup">
-        <h4> Sign up </h4> 
-    </div>
+            <div class="nav"> 
+                <h4> <a href="#"><span style="color:rgb(246, 200, 92)"> Home </h4></span></a>
+                <h4> <a href="#"> Properties </h4></a> 
+                <h4> <a href="#"> Service </h4></a> 
+                <h4> <a href="#"> About </h4></a> 
+                <h4> <a href="#"> Contacts </h4> </a> 
+            </div>
+
+            <div class="singup">
+                <span class="material-symbols-outlined"> person  </span>
+                <a href="#"><h4> Sign up </h4></a>
+            </div>
 
 
 
-    <div class="singup_icon">
-        <span class="material-symbols-outlined"> person  </span>
-    </div>
 
-
-
-    <div class="text1">
-        <h3> FIND YOUR <br>DREAM</h3>
-
-        <div class="text2">
-            <p> Our catalog will surprise you.Rather, discover<br> an unprecedented offers of luxury properties.</p>
+    
         </div>
-
     </div>
 
 
 
-    <div class="btn">
-        <h3> Catalog </h3>
+    <div class="text">
+        <h1> FIND YOUR <br>DREAM</h1>
+        <p> Our catalog will surprise you.Rather, discover<br> an unprecedented offers of luxury properties.</p>
+        <a href="#" class="btn"> <h3> Catalog  </a></h3>
     </div>
 
 
 
-    <div class="icons">
 
-        <h5>all </h5> 
-        <div class="all">
-            <span class="material-symbols-outlined"> holiday_village </span>
-        </div>
-
-
-        <h5> land lots </h5>   
-        <div class="landlots">
-             <span class="material-symbols-outlined"> map </span>
-        </div>
-
-
-        <h5> office </h5>   <div class="office">
-             <span class="material-symbols-outlined"> moving_ministry </span>
-        </div> 
-
-
-        <h5> store </h5> 
-        <div class="store">
-            <span class="material-symbols-outlined"> store </span>
-        </div>
+    <div class="icons-container">
         
+        <div class="icons">
 
-        <h5> apartment </h5><div class="apartment">
-            <span class="material-symbols-outlined"> home_work </span>
+            <div class="icon">
+                <a href="#"><span class="material-symbols-outlined allicon"> holiday_village </span></a>
+                <h5>all </h5> 
+            </div>
+
+
+            <div class="icon">
+                <a href="#"><span class="material-symbols-outlined landlotsicon"> map </span></a>
+                <h5> land lots </h5> 
+            </div>
+
+
+            <div class="icon">
+                <a href="#"><span class="material-symbols-outlined officeicon"> moving_ministry </span></a>
+            <h5> office </h5>   
+            </div> 
+
+            <div class="icon"> 
+                <a href="#"><span class="material-symbols-outlined storeicon"> store </span></a>
+                <h5> Store </h5>
+
+            </div>
+
+            <div class="icon">
+                
+                <a href="#"><span class="material-symbols-outlined apartmenticon"> home_work </span></a>
+                <h5> apartment </h5>
+
+            </div>
+
+            <div class="icon">
+                <a href="#"><span class="material-symbols-outlined villaicon"> villa </span></a>
+                <h5>villa </h5>
+            </div>
+
+            <div class="icon"> 
+                <a href="#"><span class="material-symbols-outlined houseicon"> cottage </span></a>
+                <h5> house </h5>
+
+            </div>
+
+
         </div>
-
-
-        <h5>villa </h5>
-        <div class="villa">
-            <span class="material-symbols-outlined"> villa </span>
-        </div>
-
-
-        <h5> house </h5>
-        <div class="house">
-            <span class="material-symbols-outlined"> cottage </span>
-        </div>
-
-
     </div>
 
 

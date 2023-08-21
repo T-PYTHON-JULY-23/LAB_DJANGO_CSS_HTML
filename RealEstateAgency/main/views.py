@@ -6,3 +6,4 @@ def home(request:HttpRequest):
     return render(request,'main/home.html')
 
 
+
