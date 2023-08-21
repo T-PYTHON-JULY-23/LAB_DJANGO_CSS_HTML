@@ -9,3 +9,7 @@ import string
 def home_view(request : HttpRequest):
     
     return render(request, "main/home.html")
+
+def index_view(request : HttpRequest):
+    
+    return render(request, "main/index.html")

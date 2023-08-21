@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>real estate agency</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="{%static 'styles/main.css' %}">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="top_nav">
+                <div class="home_head"><h1>Home</h1></div>
+                <div class="nav_bar">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#Properties">Properties</a>
+                    <a href="#Service">Service</a>
+                    <a href="#about">About</a>
+                    <a href="#Contacts">Contacts</a>
+                </div>
+                <div class="login">
+                    <span class="material-symbols-outlined">person</span>
+                    <h1>Sign In</h1>
+
+                </div>
+
+
+            </div>
+            <div class="content">
+                {% block content %}
+
+                {% endblock %}
+                
+                <a class="btn" href="#">catalog</a>
+            </div>
+            <div class="down_bar">
+                <div class="nav_bar_bottom">
+                    <div class="service-item">
+                        <span class="material-symbols-outlined all">holiday_village</span>
+                        <h4>all</h4>
+                    </div>
+    
+                    <div class="service-item">
+                        <span class="material-symbols-outlined Land_Lots">home_pin</span>
+                        <h4>Land Lots</h4>
+                    </div>
+    
+                    <div class="service-item">
+                        <span class="material-symbols-outlined Offices">local_post_office</span>
+                        <h4>Offices</h4>
+                    </div>
+    
+    
+                    <div class="service-item">
+                        <span class="material-symbols-outlined Store">store</span>
+                        <h4>Store</h4>
+                    </div>
+    
+                    <div class="service-item">
+                        <span class="material-symbols-outlined apartment">apartment</span>
+                        <h4>apartment</h4>
+                    </div>
+    
+                    <div class="service-item">
+                        <span class="material-symbols-outlined villa">villa</span>
+                        <h4>villa</h4>
+                    </div>
+                    <div class="service-item">
+                        <span class="material-symbols-outlined home">home</span>
+                        <h4>home</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
